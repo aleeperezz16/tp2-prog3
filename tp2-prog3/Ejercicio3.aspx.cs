@@ -18,5 +18,10 @@ namespace tp2_prog3
         {
             lbTexto.ForeColor = System.Drawing.Color.Red;
         }
+
+        protected void lbtnTextoAzul_Click(object sender, EventArgs e)
+        {
+            lbTexto.ForeColor = System.Drawing.Color.Blue;
+        }
     }
 }
