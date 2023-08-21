@@ -38,7 +38,9 @@
                 <tr>
                     <td class="auto-style10">&nbsp;</td>
                     <td class="auto-style10">&nbsp;</td>
-                    <td class="auto-style11">&nbsp;</td>
+                    <td class="auto-style11">
+                        <asp:LinkButton ID="lbtnTextoRojo" runat="server" OnClick="lbtnTextoRojo_Click">Rojo</asp:LinkButton>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style10">&nbsp;</td>
@@ -54,7 +56,7 @@
         </div>
             <br />
             <br />
-            <asp:Label ID="Label1" runat="server" Text="Resultado del texto"></asp:Label>
+            <asp:Label ID="lbTexto" runat="server" Text="Resultado del texto"></asp:Label>
         </div>
     </form>
 </body>
