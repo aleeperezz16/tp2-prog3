@@ -29,6 +29,9 @@ namespace tp2_prog3
             int cantidad1 = int.Parse(TbCantProd1.Text.Trim());
             int cantidad2 = int.Parse(TbCantProd2.Text.Trim());
 
+            if (cantidad1 <= 0 || cantidad2 <= 0)
+                throw new Exception("La cantidad ingresada debe ser positiva");
+
             string tabla = "<table border='1'>";
             tabla += "<tr><th>Producto</th><th>Cantidad</th></tr>";
 
