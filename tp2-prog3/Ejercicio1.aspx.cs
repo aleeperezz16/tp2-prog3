@@ -20,6 +20,18 @@ namespace tp2_prog3
             string producto2 = TbProd2.Text.Trim();
             int cantidad1 = int.Parse(TbCantProd1.Text.Trim());
             int cantidad2 = int.Parse(TbCantProd2.Text.Trim());
+
+            string tabla = "<table border='1'>";
+            tabla += "<tr><th>Producto</th><th>Cantidad</th></tr>";
+
+            tabla += "<tr><td>" + producto1 + "</td><td>" + cantidad1 + "</td>";
+            tabla += "<tr><td>" + producto2 + "</td><td>" + cantidad2 + "</td>";
+
+            tabla += "<tr><td>TOTAL</td><td>" + (cantidad1 + cantidad2) + "</td>";
+
+            tabla += "</table>";
+
+            LbTabla.Text = tabla;
         }
     }
 }
