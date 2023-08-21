@@ -28,5 +28,12 @@ namespace tp2_prog3
         {
             lbTexto.ForeColor = System.Drawing.Color.Green;
         }
+
+        protected void Lbk4_Click(object sender, EventArgs e)
+        {
+            ///MAYUSCULA
+            String Nuevostring = lbTexto.Text.ToUpper();
+            lbTexto.Text = Nuevostring;
+        }
     }
 }

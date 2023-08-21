@@ -25,6 +25,16 @@
         .auto-style12 {
             text-align: center;
         }
+        .auto-style13 {
+            width: 402px;
+            text-align: center;
+            height: 28px;
+        }
+        .auto-style14 {
+            width: 403px;
+            text-align: center;
+            height: 28px;
+        }
     </style>
 </head>
 <body>
@@ -36,9 +46,11 @@
                     <td class="auto-style6" colspan="3">Propiedades del texto aplicables a traves de LinkButtons </td>
                 </tr>
                 <tr>
-                    <td class="auto-style10">&nbsp;</td>
-                    <td class="auto-style10">&nbsp;</td>
-                    <td class="auto-style11">
+                    <td class="auto-style13"></td>
+                    <td class="auto-style13">
+                        <asp:LinkButton ID="Lbk4" runat="server" OnClick="Lbk4_Click">Mayúscula</asp:LinkButton>
+                    </td>
+                    <td class="auto-style14">
                         <asp:LinkButton ID="lbtnTextoRojo" runat="server" OnClick="lbtnTextoRojo_Click">Rojo</asp:LinkButton>
                     </td>
                 </tr>
