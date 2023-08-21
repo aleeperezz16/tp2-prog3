@@ -31,7 +31,7 @@ namespace tp2_prog3
 
             tabla += "</table>";
 
-            LbTabla.Text = tabla;
+            Lbtabla.Text = tabla;
         }
     }
 }
