@@ -18,6 +18,10 @@ namespace tp2_prog3
         {
             string producto1 = TbProd1.Text.Trim();
             string producto2 = TbProd2.Text.Trim();
+
+            if (producto1.ToLower() == producto2.ToLower())
+                return;
+
             int cantidad1 = int.Parse(TbCantProd1.Text.Trim());
             int cantidad2 = int.Parse(TbCantProd2.Text.Trim());
 
