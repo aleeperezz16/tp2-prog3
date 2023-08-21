@@ -52,7 +52,9 @@
                 <tr>
                     <td class="auto-style10">&nbsp;</td>
                     <td class="auto-style10">&nbsp;</td>
-                    <td class="auto-style11">&nbsp;</td>
+                    <td class="auto-style11">
+                        <asp:LinkButton ID="lbtnTextoVerde" runat="server" OnClick="lbtnTextoVerde_Click">Verde</asp:LinkButton>
+                    </td>
                 </tr>
             </table>
         </div>
