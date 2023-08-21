@@ -19,6 +19,10 @@ namespace tp2_prog3
             string producto1 = TbProd1.Text.Trim();
             string producto2 = TbProd2.Text.Trim();
 
+            if (producto1.Length == 0 || producto2.Length == 0)
+            {
+                return;
+            }
             if (producto1.ToLower() == producto2.ToLower())
                 return;
 
