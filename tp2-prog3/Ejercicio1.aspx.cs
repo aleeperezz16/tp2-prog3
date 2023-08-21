@@ -16,7 +16,10 @@ namespace tp2_prog3
 
         protected void btnGenerarTabla_Click(object sender, EventArgs e)
         {
-
+            string producto1 = TbProd1.Text.Trim();
+            string producto2 = TbProd2.Text.Trim();
+            int cantidad1 = int.Parse(TbCantProd1.Text.Trim());
+            int cantidad2 = int.Parse(TbCantProd2.Text.Trim());
         }
     }
 }

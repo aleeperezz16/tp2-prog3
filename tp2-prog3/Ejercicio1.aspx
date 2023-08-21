@@ -23,6 +23,9 @@
             <br />
         </div>
         <asp:Button ID="btnGenerarTabla" runat="server" Text="Generar Tabla" OnClick="btnGenerarTabla_Click" />
+        <br />
+        <br />
+        <asp:Label ID="Lbtabla" runat="server"></asp:Label>
     </form>
 </body>
 </html>
