@@ -21,16 +21,22 @@ namespace tp2_prog3
 
             if (producto1.Length == 0 || producto2.Length == 0)
             {
+                Lbtabla.Text = "Error: El nombre del producto no puede estar vacío";
+                Lbtabla.ForeColor = System.Drawing.Color.Red;
                 return;
             }
             if (producto1.ToLower() == producto2.ToLower())
+                Lbtabla.Text = "Error: Los nombres de productos no pueden ser iguales";
+                Lbtabla.ForeColor = System.Drawing.Color.Red;
                 return;
 
             int cantidad1 = int.Parse(TbCantProd1.Text.Trim());
             int cantidad2 = int.Parse(TbCantProd2.Text.Trim());
 
             if (cantidad1 <= 0 || cantidad2 <= 0)
-                return;
+             Lbtabla.Text = "Error: La cantidad de productos no puede ser negativo o cero");
+             Lbtabla.ForeColor = System.Drawing.Color.Red;
+             return;
 
             string tabla = "<table border='1'>";
             tabla += "<tr><th>Producto</th><th>Cantidad</th></tr>";
