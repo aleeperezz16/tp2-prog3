@@ -19,7 +19,10 @@
             <asp:TextBox ID="TbProd2" runat="server" style="margin-left: 5px; margin-right: 10px; margin-top: 10px"></asp:TextBox>
             <asp:Label ID="LblCantProd2" runat="server" Text="Cantidad:"></asp:Label>
             <asp:TextBox ID="TbCantProd2" runat="server" style="margin-left: 5px; margin-right: 0px;"></asp:TextBox>
+            <br />
+            <br />
         </div>
+        <asp:Button ID="btnGenerarTabla" runat="server" Text="Generar Tabla" OnClick="btnGenerarTabla_Click" />
     </form>
 </body>
 </html>

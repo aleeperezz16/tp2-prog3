@@ -13,5 +13,10 @@ namespace tp2_prog3
         {
 
         }
+
+        protected void btnGenerarTabla_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
