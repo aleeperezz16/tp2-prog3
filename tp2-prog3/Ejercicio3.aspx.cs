@@ -40,5 +40,22 @@ namespace tp2_prog3
         {
             lbTexto.Font.Bold = true;
         }
+
+        protected void lbtnTextoSubrayado_Click(object sender, EventArgs e)
+        {
+            lbTexto.Font.Underline = true;
+        }
+
+        protected void lbtnTextoMinuscula_Click(object sender, EventArgs e)
+        {
+            ///Minuscula
+            String Nuevostring = lbTexto.Text.ToLower();
+            lbTexto.Text = Nuevostring;
+        }
+
+        protected void lbtnTextoNormal_Click(object sender, EventArgs e)
+        {
+            lbTexto.Font.Bold = false;
+        }
     }
 }

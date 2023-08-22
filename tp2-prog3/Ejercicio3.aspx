@@ -46,7 +46,9 @@
                     <td class="auto-style6" colspan="3">Propiedades del texto aplicables a traves de LinkButtons </td>
                 </tr>
                 <tr>
-                    <td class="auto-style13"></td>
+                    <td class="auto-style13">
+                        <asp:LinkButton ID="lbtnTextoSubrayado0" runat="server" OnClick="lbtnTextoMinuscula_Click">Minuscúla</asp:LinkButton>
+                    </td>
                     <td class="auto-style13">
                         <asp:LinkButton ID="Lbk4" runat="server" OnClick="Lbk4_Click">Mayúscula</asp:LinkButton>
                     </td>
@@ -55,7 +57,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style10">&nbsp;</td>
+                    <td class="auto-style10">
+                        <asp:LinkButton ID="lbtnTextoNormal" runat="server" OnClick="lbtnTextoNormal_Click">Normal</asp:LinkButton>
+                    </td>
                     <td class="auto-style10">
                         <asp:LinkButton ID="lbtnTextoNegrita" runat="server" OnClick="lbtnTextoNegrita_Click">Negrita</asp:LinkButton>
                     </td>
@@ -65,7 +69,9 @@
                 </tr>
                 <tr>
                     <td class="auto-style10">&nbsp;</td>
-                    <td class="auto-style10">&nbsp;</td>
+                    <td class="auto-style10">
+                        <asp:LinkButton ID="lbtnTextoSubrayado" runat="server" OnClick="lbtnTextoSubrayado_Click">Subrayado</asp:LinkButton>
+                    </td>
                     <td class="auto-style11">
                         <asp:LinkButton ID="lbtnTextoVerde" runat="server" OnClick="lbtnTextoVerde_Click">Verde</asp:LinkButton>
                     </td>
