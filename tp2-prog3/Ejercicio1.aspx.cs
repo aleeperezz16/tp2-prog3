@@ -16,54 +16,46 @@ namespace tp2_prog3
 
         protected void btnGenerarTabla_Click(object sender, EventArgs e)
         {
-            string producto1 = TbProd1.Text.Trim();
-            string producto2 = TbProd2.Text.Trim();
-            
-            if (producto1.Length == 0 || producto2.Length == 0)
-            {
-                Lbtabla.Text = "Error: El nombre del producto no puede estar vacío";
-                Lbtabla.ForeColor = System.Drawing.Color.Red;
-                return;
-            }
-            if (producto1.ToLower() == producto2.ToLower()) {
-                Lbtabla.Text = "Error: Los nombres de productos no pueden ser iguales";
-                Lbtabla.ForeColor = System.Drawing.Color.Red;
-                return;
-            }
-
-            int cantidad1 = 0, cantidad2 = 0;
             try
             {
-                cantidad1 = int.Parse(TbCantProd1.Text.Trim());
-                cantidad2 = int.Parse(TbCantProd2.Text.Trim());
+                string producto1 = TbProd1.Text.Trim();
+                string producto2 = TbProd2.Text.Trim();
+
+                if (producto1.Length == 0 || producto2.Length == 0)
+                    throw new FormatException("El nombre del producto no puede ser vacío");
+
+                if (producto1.ToLower() == producto2.ToLower())
+                    throw new FormatException("Los nombres de productos no pueden ser iguales");
+
+                int cantidad1 = int.Parse(TbCantProd1.Text.Trim());
+                int cantidad2 = int.Parse(TbCantProd2.Text.Trim());
+
+                if (cantidad1 <= 0 || cantidad2 <= 0)
+                    throw new Exception("La cantidad ingresada debe ser positiva");
+
+                string tabla = "<table border='1'>";
+                tabla += "<tr><th>Producto</th><th>Cantidad</th></tr>";
+
+                tabla += "<tr><td>" + producto1 + "</td><td>" + cantidad1 + "</td>";
+                tabla += "<tr><td>" + producto2 + "</td><td>" + cantidad2 + "</td>";
+
+                tabla += "<tr><td>TOTAL</td><td>" + (cantidad1 + cantidad2) + "</td>";
+
+                tabla += "</table>";
+
+                Lbtabla.Text = tabla;
+
+                TbProd1.Text = TbProd2.Text = "";
+                TbCantProd1.Text = TbCantProd2.Text = "";
             }
-            catch(Exception error)
+            catch (Exception error)
             {
-
-            }
-
-            if (cantidad1 <= 0 || cantidad2 <= 0) {
-                Lbtabla.Text = "Error: La cantidad de productos no puede ser negativo o cero";
+                Lbtabla.Text = "Error: " + error.Message;
                 Lbtabla.ForeColor = System.Drawing.Color.Red;
-                return;
+
+                TbProd1.Text = TbProd2.Text = "";
+                TbCantProd1.Text = TbCantProd2.Text = "";
             }
-
-            string tabla = "<table border='1'>";
-            tabla += "<tr><th>Producto</th><th>Cantidad</th></tr>";
-
-            tabla += "<tr><td>" + producto1 + "</td><td>" + cantidad1 + "</td>";
-            tabla += "<tr><td>" + producto2 + "</td><td>" + cantidad2 + "</td>";
-
-            tabla += "<tr><td>TOTAL</td><td>" + (cantidad1 + cantidad2) + "</td>";
-
-            tabla += "</table>";
-
-            Lbtabla.Text = tabla;
-
-            TbProd1.Text = "";
-            TbProd2.Text = "";
-            TbCantProd1.Text = "";
-            TbCantProd2.Text = "";
 
         }
     }
