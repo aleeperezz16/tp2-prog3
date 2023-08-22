@@ -35,5 +35,10 @@ namespace tp2_prog3
             String Nuevostring = lbTexto.Text.ToUpper();
             lbTexto.Text = Nuevostring;
         }
+
+        protected void lbtnTextoNegrita_Click(object sender, EventArgs e)
+        {
+            lbTexto.Font.Bold = true;
+        }
     }
 }
