@@ -18,7 +18,7 @@ namespace tp2_prog3
         {
             string producto1 = TbProd1.Text.Trim();
             string producto2 = TbProd2.Text.Trim();
-
+            
             if (producto1.Length == 0 || producto2.Length == 0)
             {
                 Lbtabla.Text = "Error: El nombre del producto no puede estar vacío";
@@ -31,8 +31,16 @@ namespace tp2_prog3
                 return;
             }
 
-            int cantidad1 = int.Parse(TbCantProd1.Text.Trim());
-            int cantidad2 = int.Parse(TbCantProd2.Text.Trim());
+            int cantidad1 = 0, cantidad2 = 0;
+            try
+            {
+                cantidad1 = int.Parse(TbCantProd1.Text.Trim());
+                cantidad2 = int.Parse(TbCantProd2.Text.Trim());
+            }
+            catch(Exception error)
+            {
+
+            }
 
             if (cantidad1 <= 0 || cantidad2 <= 0) {
                 Lbtabla.Text = "Error: La cantidad de productos no puede ser negativo o cero";
