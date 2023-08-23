@@ -53,9 +53,14 @@ namespace tp2_prog3
             lbTexto.Text = Nuevostring;
         }
 
-        protected void lbtnTextoNormal_Click(object sender, EventArgs e)
+        protected void lbtnTextoNoNegrita_Click(object sender, EventArgs e)
         {
             lbTexto.Font.Bold = false;
+        }
+
+        protected void lbtnTextoNoSubrayado_Click(object sender, EventArgs e)
+        {
+            lbTexto.Font.Underline = false;
         }
     }
 }

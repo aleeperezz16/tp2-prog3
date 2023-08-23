@@ -58,7 +58,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style10">
-                        <asp:LinkButton ID="lbtnTextoNormal" runat="server" OnClick="lbtnTextoNormal_Click">Normal</asp:LinkButton>
+                        <asp:LinkButton ID="lbtnTextoNoNegrita" runat="server" OnClick="lbtnTextoNoNegrita_Click">No Negrita</asp:LinkButton>
                     </td>
                     <td class="auto-style10">
                         <asp:LinkButton ID="lbtnTextoNegrita" runat="server" OnClick="lbtnTextoNegrita_Click">Negrita</asp:LinkButton>
@@ -68,7 +68,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style10">&nbsp;</td>
+                    <td class="auto-style10">
+                        <asp:LinkButton ID="lbtnTextoNoSubrayado" runat="server" OnClick="lbtnTextoNoSubrayado_Click">No Subrayado</asp:LinkButton>
+                    </td>
                     <td class="auto-style10">
                         <asp:LinkButton ID="lbtnTextoSubrayado" runat="server" OnClick="lbtnTextoSubrayado_Click">Subrayado</asp:LinkButton>
                     </td>

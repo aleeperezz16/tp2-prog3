@@ -51,13 +51,13 @@ namespace tp2_prog3
         protected global::System.Web.UI.WebControls.LinkButton lbtnTextoRojo;
 
         /// <summary>
-        /// lbtnTextoNormal control.
+        /// lbtnTextoNoNegrita control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbtnTextoNormal;
+        protected global::System.Web.UI.WebControls.LinkButton lbtnTextoNoNegrita;
 
         /// <summary>
         /// lbtnTextoNegrita control.
@@ -76,6 +76,15 @@ namespace tp2_prog3
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton lbtnTextoAzul;
+
+        /// <summary>
+        /// lbtnTextoNoSubrayado control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lbtnTextoNoSubrayado;
 
         /// <summary>
         /// lbtnTextoSubrayado control.
