@@ -9,10 +9,10 @@
 <body>
     <style>
         h1,h4{
-            margin: 1rem:
+            margin: 1rem;
         }
         button{
-            margin:1rem;
+            margin: 1rem;
         }
         select{
             margin-bottom: 2rem;
