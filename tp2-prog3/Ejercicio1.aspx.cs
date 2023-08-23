@@ -44,6 +44,7 @@ namespace tp2_prog3
                 tabla += "</table>";
 
                 Lbtabla.Text = tabla;
+                Lbtabla.ForeColor = System.Drawing.Color.Empty;
 
                 TbProd1.Text = TbProd2.Text = "";
                 TbCantProd1.Text = TbCantProd2.Text = "";
